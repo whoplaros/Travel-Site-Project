@@ -1,6 +1,73 @@
-h1 {
-	font-size: 6rem;
+.container {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+body {
 	font-family: "Poppins", serif;
+}
+header {
+	background-image: linear-gradient(
+			rgba(100, 136, 177, 0.432),
+			rgba(49, 57, 83, 0.385)
+		),
+		url("../images/aerial-drone-photograph-of-cityscape-of-nicosia-to-2023-11-27-05-16-48-utc\ \(1\).jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 70vh;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+header h1 {
 	font-weight: 700;
-	line-height: 2em;
+	line-height: 1;
+	font-size: 6em;
+	margin: 0 0;
+}
+header h2 {
+	font-weight: 400;
+	font-size: 2.5em;
+
+	margin-bottom: 1em;
+}
+header p {
+	font-weight: 900;
+	font-size: 1.5em;
+	line-height: 1;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+header a {
+	background-color: white;
+	color: #201f1f;
+	text-transform: uppercase;
+	padding: 1em 2em;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 1em;
+	line-height: 1.7;
+	letter-spacing: 3px;
+}
+footer {
+	text-align: center;
+}
+
+@media (max-width: 800px) {
+	header h1 {
+		font-size: 4em;
+	}
+	header h2 {
+		font-size: 1.8em;
+	}
+	header p {
+		font-size: 1em;
+	}
+	header a {
+		padding: 1em 1em;
+		font-size: 0.7em;
+	}
 }
