@@ -4,6 +4,9 @@
 }
 body {
 	font-family: "Poppins", serif;
+	font-size: 16px;
+	margin: 0;
+	overflow-x: hidden;
 }
 header {
 	background-image: linear-gradient(
@@ -52,11 +55,66 @@ header a {
 	line-height: 1.7;
 	letter-spacing: 3px;
 }
-footer {
-	text-align: center;
+section {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-left: 5%;
+	padding-right: 5%;
 }
-
-@media (max-width: 800px) {
+footer {
+	color: white;
+	background-image: linear-gradient(
+			rgba(39, 32, 68, 0.9),
+			rgba(39, 32, 68, 0.9)
+		),
+		url("../images/cyprus-island-top-view-houses-roofs-2023-11-27-05-15-01-utc\ \(1\).jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 100px 0;
+}
+.footer-container {
+	display: grid;
+	grid-template-columns: 1.5fr 2fr 2fr;
+	grid-gap: 3em;
+}
+.column {
+}
+footer h4 {
+	font-weight: 700;
+	font-size: 1.3em;
+	line-height: 1.5;
+}
+footer p {
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 1.5;
+}
+footer ul {
+	padding: 0;
+}
+footer li {
+	color: white;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	line-height: 2em;
+}
+footer a {
+	color: white;
+	text-decoration: none;
+	font-weight: 400;
+}
+.subfooter {
+	text-align: center;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+@media (max-width: 960px) {
+	body {
+		width: 100%;
+		overflow-x: hidden;
+	}
 	header h1 {
 		font-size: 4em;
 	}
@@ -69,5 +127,38 @@ footer {
 	header a {
 		padding: 1em 1em;
 		font-size: 0.7em;
+	}
+	.footer-container {
+		grid-template-columns: 1fr;
+	}
+}
+@media (max-width: 400px) {
+	header h1 {
+		font-size: 2.5em;
+	}
+	header h2 {
+		font-size: 1.2em;
+	}
+	header p {
+		font-size: 0.9em;
+	}
+	header a {
+		padding: 0.8em 0.8em;
+		font-size: 0.6em;
+	}
+	section {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	.footer-container {
+		grid-template-columns: 1fr;
+		grid-gap: 1em;
+	}
+	footer h4 {
+		font-size: 1em;
+	}
+	footer p,
+	footer li {
+		font-size: 0.9em;
 	}
 }
