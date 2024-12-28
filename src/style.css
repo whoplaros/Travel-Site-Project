@@ -57,7 +57,7 @@ header a {
 	letter-spacing: 3px;
 }
 section {
-	max-width: 1200px;
+	max-width: 100%;
 	margin: 0 auto;
 	padding-left: 5%;
 	padding-right: 5%;
@@ -67,9 +67,17 @@ section {
 main {
 	background-color: white;
 }
+.text-center {
+	text-align: center;
+}
 .grid-two-columns {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	grid-gap: 5%;
+}
+.grid-3-columns {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 5%;
 }
 .media-wrapper {
@@ -81,9 +89,15 @@ main {
 	max-width: 100%;
 	height: 100%;
 }
+.img-small-responsive {
+	display: block;
+	max-width: 100%;
+	object-fit: cover;
+	min-height: 200px;
+}
 main h2 {
 	font-size: 2.5em;
-	color: black;
+	color: #272044;
 	font-weight: 700;
 	line-height: 1.2;
 	margin: 0.5em auto;
@@ -96,11 +110,57 @@ main h3 {
 	margin: 0;
 	letter-spacing: 5px;
 }
+main h4 {
+	font-weight: 700;
+	font-size: 1.5em;
+	line-height: 1;
+	color: #272044;
+	margin: 0;
+}
+main h5 {
+	font-weight: 700;
+	font-size: 0.8em;
+	line-height: 1;
+	color: #272044;
+	margin: 0;
+}
 main p {
 	font-weight: 400;
 	font-size: 1em;
-	line-height: 1.5;
 	color: grey;
+}
+section.section-cafes {
+	background-color: rgba(208, 204, 204, 0.24);
+}
+.card {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+}
+.card-header {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.card-body {
+	padding: 2em;
+}
+.card-footer {
+	padding: 5%;
+	margin-top: auto;
+	align-items: flex-end;
+}
+.btn {
+	display: block;
+	font-weight: 700;
+	font-size: 0.9em;
+	letter-spacing: 3px;
+	line-height: 2;
+	text-decoration: none;
+	text-align: center;
+	padding: 16px;
+	text-transform: uppercase;
+	color: white;
+	background-color: #462cb3;
 }
 footer {
 	color: white;
@@ -148,6 +208,10 @@ footer a {
 	text-align: center;
 	margin-top: 2em;
 	margin-bottom: 2em;
+	color: white;
+}
+.subfooter a {
+	color: white;
 }
 @media (max-width: 960px) {
 	body {
@@ -175,6 +239,9 @@ footer a {
 		grid-gap: 0;
 	}
 	.grid-three-columns-first-narrow {
+		grid-template-columns: 1fr;
+	}
+	.grid-3-columns {
 		grid-template-columns: 1fr;
 	}
 }
