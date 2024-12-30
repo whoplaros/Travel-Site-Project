@@ -35,7 +35,7 @@ header {
 		url("../images/aerial-drone-photograph-of-cityscape-of-nicosia-to-2023-11-27-05-16-48-utc\ \(1\).jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 70vh;
+	min-height: 70vh;
 	color: white;
 	display: flex;
 	flex-direction: column;
